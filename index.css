@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(29, 114, 148, 0.767);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 114, 148); 
+    color: white;
+    gap: 60px;
+    position: relative;
+    font-family: sans-serif;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+    color: goldenrod;
+    border-bottom: 1px solid white;
+}
+
+.about-text{
+    width: 375px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    background-color: rgb(29, 114, 148);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.2;
+    
+}
+nav li a:hover +.about-text{
+    display: flex;
+}
+.useCounter{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.useCounter h4{
+    color:rgb(6, 18, 24) ;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.useCounter ul>.lastLi{
+    padding-bottom: 30px;
+
+}
+.useCounter ul li{
+    padding: 10px;
+   
+}
+
+
+.useCounter #remove{
+    border:1px solid #ccc;
+    padding: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.useCounter #remove:hover{
+    color: black;
+}
+
+.btn{
+   max-width:80%;
+   max-height: fit-content;
+   margin: auto;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
+    background-color: #faf5f5c7;        
+}
+
+#greet-btn{
+    background-color: blue;
+}
+.greetings-container p{
+    color: rgb(243, 9, 9);
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: normal;
+    color: white;
+    padding-top:20px;
+    width: 500px;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(29, 114, 148) ;
+    
+}
+h2{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+     color: black;
+
+}
+
+button{
+   border: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   width: 100px;
+   border-radius: 5px;
+   margin-top: 40px;
+   display: block;
+   margin: auto;
+   border-radius: 5px;
+    
+}
+
+#increment-btn{
+    background: linear-gradient(rgb(46, 194, 231),rgb(29, 114, 148));
+    margin-top: 20px;
+}
+
+#save-btn{
+    background: linear-gradient(rgb(46, 194, 231),rgb(29, 114, 148));
+    margin-top: 30px;
+    
+}
+#total-btn{
+    background: linear-gradient(rgb(46, 194, 231),rgb(29, 114, 148));
+    margin-top: 20px;
+}
+#reset-btn{
+    background: linear-gradient(rgb(46, 194, 231),rgb(29, 114, 148));
+    margin-top: 20px;
+}
+p{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: ppppins sans-serif;
+    color: black;
+}
+.footer{
+    max-width: 100%;
+    height: 200px;
+    background-color: rgb(29, 114, 148); 
+    margin-top: 50px;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+   
+}
+
+@media(max-width:1200px){
+    .about-text{
+        display: none;
+        width: 250px;
+        position: absolute;
+        left: 15%;
+    }
+    nav li a:hover +.about-text{
+        display: flex;
+    }
+    .welcome{
+        font-size: 16px;
+        width: 150px;
+
+    }
+    nav{
+        gap: 20px;
+    }
+}

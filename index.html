@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Counter</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <span class="logo">DemsyCoda</span>
+      <li >
+        <a href="#" >About Counter</a>
+
+        <div class="about-text" id="about-text" >
+          This Inventory counter is designed to eliminate errors, and delay of
+          inventory process as a result of miss count and recounting during inventory exercise.
+
+          <div class="useCounter">
+            <h4>How to use the Counter</h4>
+
+            <ul>
+              <li>
+                Press the counter button while counting your items. This
+                will retain your count memory.
+              </li>
+              <li>
+                Press save button if you want to save your count. It will save
+                your last count and show you previous counts.
+              </li>
+              <li>Press clear when you are done counting.</li>
+              <li class="lastLi">Press reset if you want to clear all count memories.</li>
+              <!-- <span id="remove"  onclick="aboutCounter()">X</span> -->
+            </ul>
+          </div>
+        </div>
+      </li>
+    </nav>
+
+    <h1 class="welcome">Inventory counter to eliminate counting errors and delays</h1>
+    <div class="btn">
+      <p id="welcome-eL"></p>
+      <h1>Inventory Counter</h1>
+      <h2 id="count-el">0</h2>
+
+      <!--Increment Button-->
+
+      <button id="increment-btn" onclick="increment()">Counter</button>
+
+      <!--Save button-->
+
+      <button id="save-btn" onclick="save()">Save</button>
+      <p id="save-el"></p>
+      <p>Previous Count:</p>
+
+      <!--Total Count-->
+      <button id="total-btn" onclick="totalCounting()">Clear</button>
+      <p id="totalCount"></p>
+
+      <!--Reset button-->
+      <button id="reset-btn" onclick="resetCount()">Reset</button>
+    </div>
+
+    <div class="footer"><p>&COPY; DemsyCoda 2024. All right reserve</p></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
